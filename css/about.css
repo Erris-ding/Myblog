@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+body {
+	background: url("../img/bg_index.jfif") no-repeat fixed;
+	background-position: center center;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+}
+
+.stars {
+	position: absolute;
+	opacity: .4;
+	z-index: 0;
+}
+.main {
+	position: absolute;
+/*	background: #D0D0D0;*/
+	height: 80vh;
+	width: 80vw;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	z-index: 2;
+	float: left;
+	background: RGBA(220, 220, 220, 0.5);
+	overflow: scroll;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+.main .story h1 {
+	font-size: 3.2vh;
+}
+.main .story p {
+	font-size: 2.4vh;
+}

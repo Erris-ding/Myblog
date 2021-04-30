@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Erris's Blog</title>
+	<link href="css/pub.css" rel="stylesheet" type="text/css">
+	<link href="css/main.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+</head>
+
+<body>
+	<canvas class="stage" id="stage1"></canvas>
+	<div class="mainbox">
+		<div class="header">
+			<span class="avatar"></span>
+			<span class="posts">博客：0</span>
+			<span class="visitors">访客：0</span>
+		</div>
+		<div class="cmt">
+			<span class="comment" id="comment1">comment1</span>
+			<span class="comment" id="comment2">comment2</span>
+			<span class="comment" id="comment3">comment3</span>
+			<span class="comment" id="comment4">comment4</span>
+			<span class="comment" id="comment5">comment5</span>
+		</div>
+		<div class="cnt">
+			<div class="scroller" id="scroller">
+				<img class="img0" id="img0" src="img/scroller/0.png" alt="img0">
+				<img class="img1" id="img1" src="img/scroller/1.png" alt="img1">
+				<img class="img2" id="img2" src="img/scroller/2.png" alt="img2">
+				<img class="img3" id="img3" src="img/scroller/3.png" alt="img3">
+				<img class="img4" id="img4" src="img/scroller/4.png" alt="img4">
+				<div class="left" onClick="toLeft()"></div>
+				<div class="right" onClick="toRight()"></div>
+				<div class="dots">
+					<span class="dot0" id="dot0"></span>
+					<span class="dot1" id="dot1"></span>
+					<span class="dot2" id="dot2"></span>
+					<span class="dot3" id="dot3"></span>
+					<span class="dot4" id="dot4"></span>
+				</div>
+			</div>
+			<div class="blogs" id="blogs">
+				<a href="content.html"><span><p><b>博客测试页</b><br>时间：2021/1/17</p></span></a>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/canvas.js"></script>
+	<script type="application/javascript" src="js/sakura.js"></script>
+	<script type="text/javascript" src="js/scroller.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
+
+</body>
+
+</html>

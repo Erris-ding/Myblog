@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+body {
+	background: url("../img/bg_index.jfif") no-repeat fixed;
+	background-position: center center;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+}
+
+.stars {
+	position: absolute;
+	opacity: .4;
+	z-index: 0;
+}
+.main {
+	position: absolute;
+/*	background: #D0D0D0;*/
+	height: 48vh;
+	width: 80vh;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	z-index: 2;
+	float: left;
+}
+.title {
+	text-align: center;
+	height: 10vh;
+	line-height: 10vh;
+	font-size: 6vh;
+	font: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+	color: aliceblue;
+}
+.sp_line {
+	height: 0.2vh;
+	background-color: aliceblue;
+	border-radius: 0.1vh;
+	
+}
+
+.cnt {
+	width: 32vh;
+	height: 24vh;
+	margin-top: 2.4vh;
+	margin-left: auto;
+	margin-right: auto;
+/*	background: #666666;*/
+}
+.main .cnt span {
+	display: inline-block;
+	text-align: center;
+	width: 32vh;
+	height: 4vh;
+	margin-top: 1.6vh;
+	line-height: 4vh;
+	font: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	border-radius: 0.5vh;
+	transition: background, color;
+	transition-duration: 0.4s;
+	color: aliceblue;
+	transition-timing-function: ease-in;
+}
+.main .cnt span:hover{
+	background: RGBA(240, 240, 240, 0.4);
+	color: #39c5bb;
+	cursor: url("../img/cursor/Hand.cur"), auto;
+}
+.cnt span a {
+	cursor: url("../img/cursor/Hand.cur"), auto;
+	font: inherit;
+	color: inherit;
+	text-decoration: inherit;
+}

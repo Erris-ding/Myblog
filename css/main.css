@@ -1,0 +1,299 @@
+body::after{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: inherit;
+    filter: blur(4px);
+    z-index: -1;
+}
+
+.stage {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 5;
+	pointer-events: none
+}
+.sakura	{
+	position: fixed;
+	top: 0;left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+}
+
+.mainbox{
+	position: relative;
+	height: 99vh;
+	top: 0.5vh;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.header {
+	position: absolute;
+	width: 24%;
+	height: 39%;
+	background: RGBA(0, 240, 240, 0.5);
+	z-index: 3;
+}
+
+.avatar{
+	display: inline-block;
+	position: absolute;
+	background: url("../img/avatar.jpg");
+	background-size: contain;
+	width: 80%;
+	height: 0;
+	left: 10%;
+	top: 5%;
+	padding-bottom: 80%;
+	border-radius: 50%;
+}
+
+.posts{
+	position: relative;
+	display: block;
+	float: left;
+	font-size: 2.8vh;
+	text-align: center;
+	width: 50%;
+	margin-top: 31vh;
+}
+
+.visitors{
+	position: relative;
+	display: block;
+	float: left;
+	font-size: 2.8vh;
+	text-align: center;
+	width: 50%;
+	margin-top: 31vh;
+}
+
+.cmt {
+	position: absolute;
+	width: 24%;
+	height: 60%;
+	top: 40%;
+	background: RGBA(220, 220, 220, 0.3);
+	float: left;
+	z-index: 3;
+}
+
+.cnt {
+	position: absolute;
+	width: 75%;
+	left: 25%;
+	height: 100%;
+	background: RGBA(220, 220, 220, 0.3);
+	float: left;
+	z-index: 3;
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .mainbox {
+		width: 98vw;
+		background: RGBA(255,255,255,0.01);
+	}
+	.posts {
+		width: 100%;
+		float: none;
+		margin-top: 22vh;
+		
+	}
+	.visitors{
+		width: 100%;
+		float: none;
+		margin-top: 2vh;
+	}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .mainbox {
+		width: 98vw;
+		background: RGBA(255,255,255,0.01);
+	}
+	.posts {
+		width: 100%;
+		float: none;
+		margin-top: 26vh;
+		
+	}
+	.visitors{
+		width: 100%;
+		float: none;
+		margin-top: 2vh;
+	}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .mainbox {
+		width: 96vw;
+		background: RGBA(255,255,255,0.01);
+		
+	}
+	.posts {
+		width: 50%;
+		float: left;
+		margin-top: 31vh;
+		
+	}
+	.visitors{
+		width: 50%;
+		float: left;
+		margin-top: 31vh;
+	}
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .mainbox {
+		width: 92vw;
+		background: RGBA(255,255,255,0.01);
+	}
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .mainbox {
+		width: 1080px;
+		background: RGBA(255,255,255,0.01);}
+}
+
+.comment{
+	display: block;
+	height: 19%;
+	width: 96%;
+	margin-top: 0.5%;
+	margin-bottom: 2.2%;
+	margin-left: 2%;
+	border-radius: 2%;
+	background: RGBA(220, 220, 220, 0.8);
+	transition: background-color;
+	transition-duration: 1s;
+	transition-timing-function: ease-in-out;
+}
+
+.comment:hover{
+	background-color: RGBA(180, 180, 180, 0.9);
+}
+
+.scroller{
+	position: relative;
+	width: 100%;
+	height: 0;
+	padding-top: 32%;
+	overflow: hidden;
+/*	background: #666;*/
+}
+
+.scroller img{
+	position: absolute;
+	width: 100%;
+	top: 0;
+}
+
+.img0{
+	left: 0%;
+}
+.img1{
+	left: 100%;
+}
+.img2{
+	left: 200%;
+}
+.img3{
+	left: 300%;
+}
+.img4{
+	left: 400%;
+}
+
+.left{
+	position: absolute;
+	width: 6%;
+	height: 0;
+	padding-top: 6%;
+	left: 4%;
+	top: 36%;
+	background: url("../img/scroller/left.png");
+	background-size: contain;
+	opacity: 0.5;
+}
+
+.right{
+	position: absolute;
+	width: 6%;
+	height: 0;
+	padding-top: 6%;
+	right: 4%;
+	top: 36%;
+	background: url("../img/scroller/right.png");
+	background-size: contain;
+	opacity: 0.5;
+}
+
+.dots{
+	height: 4%;
+	width: 7%;
+	position: absolute;
+/*	background: #000;*/
+	left: 47.5%;
+	top: 85%;
+}
+
+.scroller .dots span {
+	display: block;
+	height: 100%;
+	width: 0;
+	padding-left: 18%;
+	margin-left: 2%;
+	background: RGBA(220, 220, 220, 0.5);
+	border-radius: 50%;
+	float: left;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.blogs{
+	position: absolute;
+	width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.blogs::-webkit-scrollbar { 
+    display: none;
+}
+
+.blogs span{
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 0;
+	padding-top: 20%;
+	background: url("../img/components/blog_label.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	
+}
+.blogs span p{
+	position: absolute;
+	width: 86%;
+	height: 88%;
+	
+	top: 6%;
+	left: 7%;
+}
